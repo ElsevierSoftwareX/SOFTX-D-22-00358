@@ -54,6 +54,14 @@ Create new folder under that make following folders.
     
     --> Model Testing : In this directory, there is all the guidelines in the instruction file and python files to train and test the different detection models.
     
+
+
+
+for testing images, faces and videos on the FDT tool, samples of images, faces and videos are available in the directory and trained weights of models are available as give in the following steps:
+Go to avobe drive link- https://drive.google.com/drive/folders/1In68OsTDfS4iaJbaj8jgtEYE-qBaXAfw?usp=sharing, Download folder Fake_Detection_Tool. Go to folder Fake_Detection_Tool > test_samples > Full Images / Facial Images / Videos
+For downloading model weights : Go to folder Fake_Detection_Tool > Trained_Models
+
+    
 <h2> Dataset </h2>
 Dataset is available on this drive link: -
 For Fake Face and Deepfake Detection, Dataset directory tree are as follow:
@@ -70,11 +78,6 @@ The Dataset should have two folders: train and valid. Both should contain folder
 
 
 <h4> Directory</h4>
-Due to limitation of file size upload on github(Static and template folder of web application is not available here), the entire code of FDT tool is uploaded on this google drive link:-
-https://drive.google.com/drive/folders/1In68OsTDfS4iaJbaj8jgtEYE-qBaXAfw?usp=sharing
-
-for testing images, faces and videos on the FDT tool, samples of images, faces and videos are vailable in the directory as give in the following steps:
-Go to avobe drive link, Download folder Fake_Detection_Tool. Go to folder Fake_Detection_Tool > test_samples > Full Images / Facial Images / Videos
                                                                                                              
 
 
