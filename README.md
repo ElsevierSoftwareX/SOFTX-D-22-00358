@@ -77,12 +77,40 @@ The Dataset should have two folders: train and valid. Both should contain folder
   
 <h2>Steps to recreate</h2>
 <h4>Prerequisites</h4>
-- [ ] Python 3.8.8
-Flask 1.1.2
-Werkzeug 1.0.1
-conda 4.10.1
+- Python 3.8.8
+- Flask 1.1.2
+- Werkzeug 1.0.1
+- conda 4.10.1
 
-<h3> To run the application locally on your machine </h4>
+<h3> To run the application locally on your machine </h4><br>
+Copy your trained model to the models folder.
+   - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1UX8jXUXyEjhLLZ38tcgOwGsZ6XFSLDJ-?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
+
+#### Step 1 : Clone the repo and go to the Django Application
+`git clone https://github.com/hsam-2021/deepfake-generation-and-detection `
+
+#### Step 2: Install the requirements
+`pip install -r requirements.txt`
+
+**Note :** Here you may need to do a recursive install of the requirements.txt and depending up compatible versions update and re-install the requirements.txt
+
+#### Step 3: Copy Models
+
+Copy the pre-trained model to the models folder i.e Django Application/models/
+
+
+#### Step 4: Run the project
+Navigate to the path where manage.py file is located `\Deepfake_detection_miniproject_3\Django Application`. Open the command prompt and run 
+
+`python manage.py runserver`
+
+#### Step 5: Accessing the web app in browser
+Once the server is up and running copy the following URL in any of your favourite browser.
+
+`http://127.0.0.1:8000/`
+
+
+
 The Code is written in Python 3.7. Also, Download and install Anaconda follow steps given in this link:<br>
       https://docs.anaconda.com/anaconda/install/ <br>
 To install dependencies required, Download this file - environment.yml <br>
