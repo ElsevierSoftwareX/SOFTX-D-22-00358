@@ -4,13 +4,11 @@ Table of content
 1. Demo and Screenshots
 2. Overview
 3. Motivation 
-4. Dataset
-5. Directory Tree
-6. Installation
-7. Deployment
-8. Technologiees Used
-9. To Do
-10. Credits
+4. Directory Structure
+5. Dataset
+6. Steps to recreate
+7. Technologiees Used
+8. To Do
 
 <h2> Demo and Screenshots</h2>
 
@@ -87,12 +85,11 @@ Copy your trained model to the models folder.
    - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1PnQ5Fr8yxt9I6uQo7GXS9hvmSefhTPWg?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
 
 #### Step 1 : Clone the repo and go to the Fake_Detection_Tool
-`git clone https://github.com/hsam-2021/deepfake-generation-and-detection `
+`git clone https://github.com/surbhiraj786/GUI_Fake-Detection.git `
 
 #### Step 2: Install the requirements
 `To install dependencies required, Use the environment.yml from downloaded folder <br>
 Use this command to create environment from the environment.yml file- <br><b>conda env create -f environment.yml</b>
-
 
 **Note :** Must keep this file facenet_pytorch-2.2.7-py3-none-any.whl in the same folder to install dependency. Here you may need to do a recursive install some packages and depending up compatible versions update and pip install package name
 
@@ -125,9 +122,7 @@ Once the server is up and running copy the following URL in any of your favourit
 
 <h3> To Do </h3>
 To integrate it with other platform like Reddit, Instagram etc.
-<h4> Note </h4>
-Due to restriction in uploading of file size on github, the entire code is available on google drive link. Please refer to google drive link - https://drive.google.com/drive/folders/1In68OsTDfS4iaJbaj8jgtEYE-qBaXAfw?usp=sharing
 
-<h4> Contact </h4>
+<h3> Contact </h3>
 For any queries and doubts, Please contact us at this email id: surbhiraj786@gmail.com, surbhi_2021cs36@iitp.ac.in
  
