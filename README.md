@@ -16,7 +16,7 @@ Table of content
 
 <h5>Demo of Web App: </h5> 
 
-![Demo_FDS_WebApp](https://user-images.githubusercontent.com/38296253/217193271-4b18ece8-b2bd-4d9c-8fdb-9cabab3e4313.mp4)
+https://user-images.githubusercontent.com/38296253/217193271-4b18ece8-b2bd-4d9c-8fdb-9cabab3e4313.mp4
 
 <br>
 The Demo of Fake Detection tool is available at this link:- 
