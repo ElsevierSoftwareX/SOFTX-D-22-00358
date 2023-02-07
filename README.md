@@ -14,7 +14,7 @@ Table of content
 
 <h2> Demo and Screenshots</h2>
 
-<h5>Demo of Web App: </h5> 
+<h4>Demo of Web App: </h4> 
 
 https://user-images.githubusercontent.com/38296253/217193271-4b18ece8-b2bd-4d9c-8fdb-9cabab3e4313.mp4
 
@@ -76,8 +76,8 @@ The Dataset should have two folders: train and valid. Both should contain folder
   ![image](https://user-images.githubusercontent.com/38296253/190840029-4458e94b-9af3-49f8-a5c1-73c7b1dd285f.png)
   
 <h2>Steps to recreate</h2>
-###Prerequisites
-Python 3.8.8
+<h4>Prerequisites</h4>
+- [ ] Python 3.8.8
 Flask 1.1.2
 Werkzeug 1.0.1
 conda 4.10.1
