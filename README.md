@@ -101,7 +101,7 @@ Copy the pre-trained model to the models folder i.e Fake_Detection_Tool/Trained_
 #### Step 4: Run the project
 Navigate to the path where app.py file is located `\Fake_Detection_Tool`. Open the Anaconda prompt shell and run 
 
- conda activate env
+ conda activate env <br>
 `python app.py`
 
 #### Step 5: Accessing the web app in browser
