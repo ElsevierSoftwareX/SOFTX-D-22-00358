@@ -75,18 +75,14 @@ The Dataset should have two folders: train and valid. Both should contain folder
 
   ![image](https://user-images.githubusercontent.com/38296253/190840029-4458e94b-9af3-49f8-a5c1-73c7b1dd285f.png)
   
+<h2>Steps to recreate</h2>
+###Prerequisites
+Python 3.8.8
+Flask 1.1.2
+Werkzeug 1.0.1
+conda 4.10.1
 
-
-<h4> Directory</h4>
-                                                                                                             
-
-
-<h4> Technical Aspect </h4>
-This tool is mainly divided into 3 tasks:
-1. For Image Manipulation Detection, Trained U-Net Model on Defacto Dataset that comprises approx 30K manipulated images (created using copy-move, splicing, inpainting, etc) with their corresponding ground truths.
-2. For Fake Face Detection, Trained ResNet50+Vit model on Dataset that comprises of approx 134K fake and approx 125K real faces in both Indian and Non-Indian context.
-3. For Deepfake Detection, Trained EfficientNet B7 model on FaceForensics++ dataset.  
-<h4> Installation  </h4>
+<h3> To run the application locally on your machine </h4>
 The Code is written in Python 3.7. Also, Download and install Anaconda follow steps given in this link:<br>
       https://docs.anaconda.com/anaconda/install/ <br>
 To install dependencies required, Download this file - environment.yml <br>
