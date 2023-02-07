@@ -41,12 +41,20 @@ https://drive.google.com/file/d/1BeTUMwci9uNNuU7RxOkGy4SHAM0PJ6u5/view?usp=share
  <img src="https://user-images.githubusercontent.com/38296253/199389242-9cc5af0f-2c66-44e6-8e43-b571b053f72b.PNG" width="300" height="300">
 
 
-<h4> Overview </h4>
+<h2> Overview </h2>
 FDT web app is a python package toolkit and a single platform for detecting fake media. Users can upload facial image, image or video from their local system or by placing URL link of a image or a video. The tool detects it as a fake with a red bounding box or real with a green bounding box and with a confidence score and its metadata details. It is also integrated with Twitter for streaming image tweets and categorize it into real or fake, impact as an influencer or amateur, sentiments as 1(Positive), 0(Neutral) and -1(Megative), etc, and presents other statistics through pie charts. 
 
-<h4>Motivation</h4>
+<h2>Motivation</h2>
 To deal with the fakes in the wild and in Indian context, an open source and easy-to-use GUI is available for Fake Detection. 
-<h4> Dataset </h4>
+<h2>Directory Structure</h2>
+
+Create new folder under that make following folders.
+    
+    --> Detection App : In this folder all the cloned files should be placed except Model Testing.
+    
+    --> Model Testing : In this directory, there is all the guidelines in the instruction file and python files to train and test the different detection models.
+    
+<h2> Dataset </h2>
 Dataset is available on this drive link: -
 For Fake Face and Deepfake Detection, Dataset directory tree are as follow:
 The Dataset should have two folders: train and valid. Both should contain folders named 'fake' and 'real'.
