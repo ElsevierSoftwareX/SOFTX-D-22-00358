@@ -16,18 +16,12 @@ Table of content
 
 <h5>Demo of Web App: </h5> 
 
-
-https://user-images.githubusercontent.com/38296253/217192740-d19c5fce-015f-4c6b-b66c-3a097014fdd7.mp4
-
-
-![Demo_FDS_WebApp](https://user-images.githubusercontent.com/38296253/191457496-5238628f-6770-43ca-960a-24dd365acabc.gif)
+![Demo_FDS_WebApp](https://user-images.githubusercontent.com/38296253/217193271-4b18ece8-b2bd-4d9c-8fdb-9cabab3e4313.mp4)
 
 <br>
 The Demo of Fake Detection tool is available at this link:- 
 https://drive.google.com/file/d/1Mx-uEaHOGk7V7KL3QJ_TJLNOS7DhOFjn/view?usp=sharing (for GIF video)<br>
 https://drive.google.com/file/d/1BeTUMwci9uNNuU7RxOkGy4SHAM0PJ6u5/view?usp=share_link
-
-
 
 <br><br>
 
