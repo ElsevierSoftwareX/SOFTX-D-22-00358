@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+{% block head %}
+<style>
+  table, th, td {
+    border:3px solid black;
+    border-collapse: collapse;
+  }
+  
+
+  th:nth-child(even),td:nth-child(even) {
+    background-color: #D6EEEE;
+    }
+  </style>
+
+    <head>
+
+         {% block stylesheets %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> Deep-Fake Detection</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="static/deepfake_chalao_template/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{ url_for('.static',filename="css/bootstrap.min.css")}}">
+        <link rel="stylesheet" href="{{ url_for('.static',filename="css/bootstrap-theme.min.css")}}">
+        <link rel="stylesheet" href="{{ url_for('.static',filename="css/fontAwesome.css")}}">
+        <link rel="stylesheet" href="{{ url_for('.static',filename="css/light-box.css")}}">
+        <link rel="stylesheet" href="{{ url_for('.static',filename="css/templatemo-style.css")}}">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="{{ url_for('.static',filename="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js")}}"></script>
+        {% endblock stylesheets %}
+    </head>
+    {% endblock %}
+    {% block body %}
+
+<body>
+  <div class="main" style="background-image: url("images/d_63.jpg")>
+</div>
+
+    <nav>
+        <div class="logo">
+            <a href="127.0.0.1.5000/uploadfile">Back <em>Page </em></a>
+        </div>
+      <div class="menu-icon">
+        <span></span>
+      </div>
+    </nav>
+
+
+    <div class="masonry-portfolio" id="masonry">
+        <div class="container-fluid">
+            <div class="masonry">
+
+                  <div class="thumb">
+                      <div class="hover-effect">
+                          <div class="hover-content">
+
+                          </div>
+                      </div>
+                      <div class="col-md-offset-1"">
+
+                      <div class="video">
+                        <video autoplay="" loop="" muted width=600 height=600>
+                          <source src="{{ url_for('return_files_tut_real',filename=filename.input_f_n) }}""  type="video/mp4" />
+                            </video>
+                            <video autoplay="" loop="" muted width=600 height=600>
+                              <source src="{{ url_for('return_files_tut_real',filename=filename.output_f_n) }}""  type="video/mp4" />
+                                </video>
+                      </div>
+                      <div class="video">
+
+                      </div>
+
+                  </div></a>
+                </div>
+
+
+                <div class="container">
+
+
+                <h1 class="logo cursive">
+                  <div class="col-md-4 col-md-offset-4 col-md-4 col-md-offset-4 col-sm6-6">
+                    <div class="d-flex flex-row text-white">
+                      <div class="p-4 bg-primary text-center skill-block">
+                          <h4>Video Category</h4>
+                          <h3>{{filename.title}}</h3>
+                      </div>
+                      <div class="p-3 bg-success text-center skill-block">
+                          <h4>Predicted Fake Score</h4>
+                          <h3>{{filename.predicted_fake_score}}</h3>
+                      </div>                                                
+                  </div>
+                  
+                  
+                  
+                    <table style="width:100%">
+                      <h2>Metadata Information</h2>
+                      <tr>
+                        <td>{{filename.a}}</td>
+                        <td>{{filename.a1}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>{{filename.b}}</td>
+                        <td>{{filename.b1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.c}}</td>
+                        <td>{{filename.c1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.d}}</td>
+                        <td>{{filename.d1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.e}}</td>
+                        <td>{{filename.e1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.f}}</td>
+                        <td>{{filename.f1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.g}}</td>
+                        <td>{{filename.g1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.h}}</td>
+                        <td>{{filename.h1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.i}}</td>
+                        <td>{{filename.i1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.j}}</td>
+                        <td>{{filename.j1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.k}}</td>
+                        <td>{{filename.k1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.l}}</td>
+                        <td>{{filename.l1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.m}}</td>
+                        <td>{{filename.m1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.n}}</td>
+                        <td>{{filename.n1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.o}}</td>
+                        <td>{{filename.o1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.p}}</td>
+                        <td>{{filename.p1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.q}}</td>
+                        <td>{{filename.q1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.r}}</td>
+                        <td>{{filename.r1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.s}}</td>
+                        <td>{{filename.s1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.t}}</td>
+                        <td>{{filename.t1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.u}}</td>
+                        <td>{{filename.u1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.v}}</td>
+                        <td>{{filename.v1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.w}}</td>
+                        <td>{{filename.w1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.x}}</td>
+                        <td>{{filename.x1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.y}}</td>
+                        <td>{{filename.y1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.z}}</td>
+                        <td>{{filename.z1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.A}}</td>
+                        <td>{{filename.A1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.B}}</td>
+                        <td>{{filename.B1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.C}}</td>
+                        <td>{{filename.C1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.D}}</td>
+                        <td>{{filename.D1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.E}}</td>
+                        <td>{{filename.E1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.F}}</td>
+                        <td>{{filename.F1}}</td>
+                        
+                      </tr><tr>
+                        <td>{{filename.G}}</td>
+                        <td>{{filename.G1}}</td>
+                        
+                      </tr>
+                      
+                    </table> 
+                    <!--Video is  {{ filename.title }}<br> Predicted Fake Score is  {{filename.predicted_fake_score}}
+                    --></h1>
+              </div>
+            </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ url_for('.static',filename="static/js/vendor/jquery-1.11.2.min.js")}}"><\/script>')</script>
+
+    <script src="{{ url_for('.static',filename="static/js/vendor/bootstrap.min.js")}}"></script>
+
+    <script src="{{ url_for('.static',filename="static/js/plugins.js")}}"></script>
+    <script src="{{ url_for('.static',filename="static/js/main.js")}}"></script>
+
+</body>
+</html>
+
+{% endblock %}

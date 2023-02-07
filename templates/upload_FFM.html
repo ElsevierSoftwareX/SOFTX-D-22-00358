@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Face Manipulation Detection</title>
+
+  <link href="static/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/css/coming-sssoon.css" rel="stylesheet" />
+  <link href="static/css/styel.css" rel="stylesheet" />
+
+
+  <!--     Fonts     -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              Multimedia
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#"> Full Image</a></li>
+              <li><a href="#"> Face</a></li>
+              <li><a href="#"> Video</a></li>
+              <li><a href="#"> Audio</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main" style="background-image: url('static/img/default.jpg')">
+
+
+    <div class="container">
+      <h1 class="logo cursive">
+        Face Manipulation Detection
+      </h1>
+
+
+      <div class="footer">
+        <div class="content">
+          <h4 class="motto">Identifying GAN-generated Fake Faces </h4>
+          <h5 class="motto"> Aim to provide the user with the ability to classify Face as fake or real</h5>
+          <div class="subscribe">
+            <h5 class="info-text">
+
+            </h5>
+            <div class="row">
+              <style>
+                .inputfile+label {
+                  font-size: 1.25em;
+                  font-weight: 700;
+                  color: white;
+                  background-color: black;
+                  display: inline-block;
+                }
+
+                .inputfile:focus+label,
+                .inputfile+label:hover {
+                  background-color: red;
+                }
+
+                .inputfile+label {
+                  cursor: pointer;
+                }
+
+                .inputfile:focus+label {
+                  outline: 1px dotted #000;
+                  outline: -webkit-focus-ring-color auto 5px;
+                }
+              </style>
+
+              <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
+                <form class="form-inline" role="form" align="center" action="" method="post"
+                  enctype=multipart/form-data>
+
+
+                  <input type=file name=file class="btn btn-danger btn-fill inputfile"> <input type=submit
+                    align='center' class="col-md-4 row-md-2 row col-md-offset-1 col-sm6-6" value="Upload Face">
+
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="static/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="static/js/bootstrap.min.js" type="text/javascript"></script>
+
+</html>

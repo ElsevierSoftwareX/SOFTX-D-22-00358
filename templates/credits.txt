@@ -1,0 +1,19 @@
+
+
+To create the WebApp pages ,we have used freely available templates.The link is given below:
+
+1. https://templatemo.com/tm-520-highway
+2. https://bootstrapmade.com/selecao-bootstrap-template/
+              /**
+              * Template Name: Selecao - v4.0.1
+              * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+              * Author: BootstrapMade.com
+              * License: https://bootstrapmade.com/license/
+              */
+3. https://animate.style/
+              * Version - 4.1.1
+              * Licensed under the MIT license - http://opensource.org/licenses/MIT
+              *
+              * Copyright (c) 2020 Animate.css
+4. https://www.creative-tim.com/product/coming-sssoon-page
+            

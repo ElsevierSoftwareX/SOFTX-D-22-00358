@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+  table th {border:inset 4px black; background-color:navy;}
+</style>
+<body style="background-color:lavender;">
+<table>
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+
+</table>
+<p align="center"><a href="/display" target="_blank"><button>Tweet Statistic</button></a></p>
+
+
+</body>
+</html>

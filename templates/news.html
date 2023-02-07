@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trending BBC News</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="static/Login_v13/images/icons/hash.ico"/>
+
+	<link href="{{url_for('static',filename='Login_v14/vendor/designing/css/designing.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/vendor/animate/animate.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/vendor/select2/select2.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/css/util.css')}}" rel="stylesheet" type="text/css">
+  	<link href="{{url_for('static',filename='Login_v14/css/main.css')}}" rel="stylesheet" type="text/css">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="jumbotron" style="color:black">
+
+    <h1 style="color:black">
+
+        Top Trending BBC NEWS
+
+    </h1>
+
+</div>
+
+
+<div class="container">
+
+    {% for news, desc, i in context %}
+
+    <img src="{{i}}" alt="" width="50%;">
+    <h3>News: </h3> {{news}}
+    <h4>Description: </h4> {{desc}}
+
+    {% endfor %}
+
+
+</div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/designing/js/popper.js"></script>
+<script src="vendor/designing/js/designing.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

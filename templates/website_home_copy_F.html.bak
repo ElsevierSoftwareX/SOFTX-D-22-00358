@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FDS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="icon" type="image/png" href="static/Login_v12/images/icons/hash.ico"/>
+  <link href="{{url_for('static',filename='css/animate.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/aos.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/bootstrap-icons.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/glightbox.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/swiper-bundle.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='css/dnd.css')}}" rel="stylesheet" type="text/css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.8.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <link rel="stylesheet" type="text/css" href="spinkit.min.css">
+
+
+</head>
+<style>
+  
+  .container {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+   padding-top: 10px;
+}
+ .uppercase {
+	 text-transform: uppercase;
+}
+ .btn {
+	 display: inline-block;
+	 background: transparent;
+	 color: inherit;
+	 font: inherit;
+	 border: 0;
+	 outline: 0;
+	 padding: 0;
+	 transition: all 200ms ease-in;
+	 cursor: pointer;
+}
+ .btn--primary {
+	 background: #7f8ff4;
+	 color: #fff;
+	 box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+	 border-radius: 2px;
+	 padding: 12px 36px;
+}
+ .btn--primary:hover {
+	 background: #6c7ff2;
+}
+ .btn--primary:active {
+	 background: #7f8ff4;
+	 box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+ .btn--inside {
+	 margin-left: -96px;
+}
+ .form__field {
+	 width: 560px;
+	 background: #fff;
+	 color: #a3a3a3;
+	 font: inherit;
+   border-radius: 10px;
+	 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+	 border: 10;
+	 outline: 0;
+	 padding: 20px 18px;
+}
+
+  .buttons{
+  display: flex;
+  width: 500px;
+  height: 300px;
+ 
+}
+.buttons .row{
+  display: block;
+  margin: 40px;
+}
+.buttons .row button{
+  position: relative;
+  display: block;
+  height: 55px;
+  width: 150px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0s ease-out;
+}
+.row button:active{
+  top: -3px;
+}
+.row button.twitter,
+.row button.twitter span{
+  background: #46C1F6;
+  border-left: 1px solid #269BD0;
+  box-shadow: 0px 5px 0px 0px #269BD0;
+}
+.row button.twitter:active{
+  box-shadow: 0px 2px 0px 0px #269BD0;
+}
+.row button.reddit,
+.row button.reddit span{
+  background: #ff4500;
+  border-left: 1px solid #DC143C;
+  box-shadow: 0px 5px 0px 0px #DC143C;
+}
+.row button.reddit:active{
+  box-shadow: 0px 2px 0px 0px #DC143C;
+}
+.row button span{
+  position: absolute;
+  height: 55px;
+  width: 60px;
+  top: 0;
+  left: -60px;
+  line-height: 55px;
+  font-size: 25px;
+  display: block;
+  border-radius: 5px 0 0 5px;
+}
+.row button:active span{
+  top: -3px;
+}
+.row button.twitter span{
+  border-right: 1px solid #269BD0;
+}
+.row button.reddit span{
+  border-right: 1px solid #DC143C;
+}
+.row button.twitter:active span{
+  box-shadow: 0px 5px 0px 0px #269BD0,
+              6px 4px 2px rgba(0,0,0,0.3);
+}
+.row button.reddit:active span{
+  box-shadow: 0px 5px 0px 0px #DC143C,
+              6px 4px 2px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.loading {
+  border: 2px solid #ccc;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top-color: #1ecd97;
+  border-left-color:  #1ecd97;
+  animation: spin 1s infinite ease-in;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+</style>
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="website_home_copy.html">FDS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#services">Fake Detector</a></li>
+              <li><a class="nav-link scrollto" href="/news">News</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+               </ul>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image:url(https://i.pinimg.com/originals/1f/ea/6f/1fea6f1300ba8b8505d29ce3caf5612c.jpg);">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Fake Face and Video Detection System </h2>
+                <p class="animate__animated animate__fadeInUp">Web Portal of Fake Detection System is developed by deploying the Fake face
+                  detection model, Image manipulation detection model and Deepfake detection model with best accuracy achieved.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(https://cdn3.vectorstock.com/i/1000x1000/61/22/blue-metal-perforated-background-with-cut-brushed-vector-20086122.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Fake Face and Video Detection System</h2>
+                <p class="animate__animated animate__fadeInUp">Web Portal of Fake Detection System is developed by deploying the Fake face
+                  detection model, Image manipulation detection model and Deepfake detection model with best accuracy achieved.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/images/o3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Fake Face and Video Detection System</h2>
+                <p class="animate__animated animate__fadeInUp">Web Portal of Fake Detection System is developed by deploying the Fake face
+                  detection model, Image manipulation detection model and Deepfake detection model with best accuracy achieved.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+    <!-- ======= Featured Services Section Section ======= -->
+
+
+    <!-- ======= Services Section ======= -->
+    <!--
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Fake Detector</h3>
+          <p>Upload the image/video to check it or simply copy the link here to test a file.</p>
+        </header>
+        <div  class="abc">
+          <div >
+              <form action = "/uploader" method = "POST" enctype = "multipart/form-data">
+                  <div class="boxes"><label><h4>Browse image or video file</h4></label></div>
+                  <div class="boxes"><input type = "file" name = "file1"/></div>
+                  <div class="boxes">
+                      <label><h4>Enter a image URL</h4></label>
+                      <input name="image_url" type="text"/>
+                  </div> -->
+
+                  <!-- Video URL input -->
+                  <!--
+                  <div class="boxes">
+                      <label><h4>Enter a Video URL</h4></label>
+                      <input name="video_url" type="text">
+                  </div>
+                  <input type = "submit"/>
+               </form>
+          </div>
+      </div>
+
+    -->
+    <section id="services">
+      <div class="container mb-4" >
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-12 d-flex justify-content-center align-items-center" >
+                <div class="abc d-flex justify-content-center align-items-center" style="border: 2px solid rgb(49, 49, 49);margin: 10px; padding: 30px; border-radius: 7px; background-color: #FFFAFA;">
+                    <div>
+                        <form action="/uploader" method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                            <div class="boxes d-flex justify-content-center"><label><b>Browse image or video file</b></label></div>
+  
+                            <div class="container" >
+                              <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                                
+                              <div class="image-upload-wrap">
+                                <input name='file1' class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*,video/*" />
+                                <div class="drag-text">
+                                  <h3>Drag and drop a Image/Video</h3>
+                                </div>
+                              </div>
+                              <div class="file-upload-content">
+                                <img class="file-upload-image" src="#" alt="your image" />
+                                <div class="image-title-wrap">
+                                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                </div>
+                              </div>
+                            </div>                       
+                         
+                          <div class="container">
+                            <div class="container__item">
+                                <input type="text" class="form__field" name="image_url" placeholder="Paste Imge URL Link Here ..." />
+                            </div>
+                            <br><br>
+                         </div>
+                          <div class="container">
+                            <div class="container__item">
+                                <input type="text" class="form__field" name="video_url" placeholder="Paste Video URL Link Here..." />
+                            </div>
+                          </div>
+
+                          <!-- <div class="containerr">
+                            <button class='tay' type = "submit" onclick='spiny()'>
+                                <a href="#"> Press Here </a>
+                            </button>
+                            <center class="example">
+                                <img src="cupertino_activity_indicator.gif" alt="loder">
+                            </center>
+                        </div> -->
+                        <button type="submit" id="btn" class="btn btn--primary btn--inside uppercase">Send</button>
+
+                        <div class='spinner-displayer'></div>
+                          <!-- <button type = "submit" class="btn btn--primary btn--inside uppercase">Send</button> -->
+                        </form>
+                        <br>
+                        <!--<div style="padding: 0px 160px 0px 0px;"><a href="/instagram" class="btn btn-success" style="margin: center; background: #f09433; 
+                          background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                          background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                          background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); "> Search in instagram</a></div>-->
+                         </div>
+                    </div>
+                </div>
+
+
+                <div class="buttons">
+                  <div class="row">
+                    <a href="/twitter"><button class="twitter">
+                    <span><i class="fab fa-twitter"></i></span>Twitter</button></a>
+                    </div>
+
+
+                  
+				  <!-- <div class="row">
+                    <a href="reddit"><button class="reddit">
+                    <span><i class="fab fa-reddit"></i></span>Reddit</button></a>
+                  </div>   -->
+                </div>
+              </div>
+            </div>
+          </section>
+          
+  
+    <!-- End Services Section -->
+
+     <!-- ======= About Us Section ======= -->
+     <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Stop women and cyber crimes by machine learning tools and creating a better world.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="static/images/women.jpg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                To lower the crime against women. By reducing the fake images a major portion of crimes can be reduced.
+              </p>
+            </div>
+          </div>
+
+     
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="static/images/safe.jpeg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                To make internet a safe for all place and minimum digital garbage.
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="static/SampleTemplate/assets/img/about-vision.jpg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Experties</a></h2>
+              <p>
+                We are a team filled with computer science engineers and developers for proper working of our tool.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <script>
+    //     function spiny(){
+    //     let spinner = document.querySelector('.example');
+    //     spinner.style.display = 'block';
+    //     setTimeout(() => {
+    //         spinner.style.display = 'none';
+    //     }, 6000);
+    // }
+
+
+    function spinner() {
+    const spinnerDisplayer = document.querySelector('.spinner-displayer');
+    const btn = document.getElementById('btn');
+    
+    btn.addEventListener('click', () => {
+    spinnerDisplayer.classList.add('loading');
+    // document.body.style.backgroundColor = "white";
+  })
+}
+
+spinner();
+        </script>
+    
+    
+
+  <!-- Vendor JS Files -->
+  <script src="static/SampleTemplate/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/aos/aos.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/SampleTemplate/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static\assets\vendor\dragndrop\dndj.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/SampleTemplate/assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
