@@ -12,7 +12,7 @@ Table of content
 9. To Do
 10. Credits
 
-<h4> Demo and Screenshots</h4>
+<h2> Demo and Screenshots</h2>
 
 <h5>Demo of Web App: </h5> 
 
