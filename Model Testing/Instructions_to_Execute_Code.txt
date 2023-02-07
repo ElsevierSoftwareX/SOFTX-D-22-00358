@@ -1,0 +1,190 @@
+
+This file contains description of how to run different files through command line.
+Note: Make Sure the environment is created before running these files. Steps to install the environment
+      are mentioned in Specifications_For_Installation.txt
+
+
+
+1. train.py:
+   Before running this file , make sure to save the dataset in the "Datasets" folder.
+   The Dataset should have two folders: train and valid. Both should contain folders named 'fake' and 'real'.
+
+
+                                                          |--------|-----real-------0.jpg , 1.jpg , xx.jpg
+                                                          |--------|-----fake-------1.jpg , 4.jpg , xx.jpg
+                                                          |
+                                     |----------train-----|
+                  Datasets:----------|
+                                     |----------valid-----|
+                                                          |
+                                                          |--------|-----real-------10.jpg , 13.jpg , xx.jpg
+                                                          |--------|-----fake-------12.jpg , 23jpg , xx.jpg
+
+
+
+
+     "--model-id" : Select the Efficient-Net Version, by-default Efficientnet(b3) is selected
+     Comments: Pass 1 for Efficientnet(b1),2 for Efficientnet(b2) and so on upto 7
+
+
+     "--batch-size": Batch Size for the model to train , by default it is 16.
+     Comments: Select appropriate batch size according to the GPU Size available
+
+     "--epochs": Number of Epochs to train the Model for ,by-default it is 5.
+     Comments: None
+
+     "--model-save-to": Directory To Save Model to, by-default models are stored in "Trained_Models" Folder
+
+  Example:      python train.py --batch-size 2 --epochs 10 --model-save-to "Trained_Models"
+
+
+
+********-------------------------------------------------xxxxxxxxxxxx------------------------------------------------------------********
+
+
+
+
+
+
+2. fastai_procedure.py:
+   Train your model using this file.
+
+
+
+    "--model-id" : Select the Efficient-Net Version, by-default Efficientnet(b3) is selected
+     Comments: Pass 1 for Efficientnet(b1),2 for Efficientnet(b2) and so on upto 7
+
+
+    "--batch-size": Batch Size for the model to train , by default it is 16.
+    Comments: Select appropriate batch size according to the GPU Size available
+
+    "--epochs": Number of Epochs to train the Model for ,by-default it is 5.
+    Comments: None
+
+    "--path": Path of the Dataset
+    Comments: Make Sure the Dataset has two folders: train and valid.Both should contain folders named 'fake' and 'real'.
+
+
+                                                            |--------|-----real-------0.jpg , 1.jpg , xx.jpg
+                                                            |--------|-----fake-------1.jpg , 4.jpg , xx.jpg
+                                                            |
+                                       |----------train-----|
+                    Datasets:----------|
+                                       |----------valid-----|
+                                                            |
+                                                            |--------|-----real-------10.jpg , 13.jpg , xx.jpg
+                                                            |--------|-----fake-------12.jpg , 23jpg , xx.jpg
+
+   "--model-save-to": Directory To Save Model to, by-default , FastAI stores models in "Saved_Models" Folder
+
+   Example:      python fastai_procedures.py --batch-size 2 --epochs 10 --path Datasets --model-save-to Saved_Models
+
+
+
+********-------------------------------------------------xxxxxxxxxxxx------------------------------------------------------------********
+
+
+
+
+
+
+
+
+
+
+
+
+3. test_video.py:
+   Test a Single Video whether it is Fake or Real.
+   Output: The output will give a mean fake score for the complete video.
+
+
+
+     "--model-name": Name of the Model.Models are stored in the "Trained_Models" folder.
+                     Select a model from that folder. By-default "default.pth" is selected.
+                     If you want to test your own model,save it in the "Trained_Models" Folder.
+
+     "--video-path": Name of the Video you want to test.Videos are stored in "test_video" folder.
+                     Select the name of the video from the folder,example: test_default_fake.mp4 ot test_default_real.mp4 , etc.
+                     If you want to test your own video,save it in the "test_video" folder first.
+
+     "--per-frame": If you pass say 5 in this argumet,every 5th frame will be tested.Pass 1 to test every frame in the video.
+                    By-default every 10th frame is tested.
+
+    Example:    python test_video.py --model-name default.pth --video-path id0_id2_0005.mp4 --per-frame 10
+
+
+
+********-------------------------------------------------xxxxxxxxxxxx------------------------------------------------------------********
+
+
+
+
+
+
+
+
+4. test_video_directory.py:
+   This will test all the videos stored in the test_videos directory.If you want to test your own set of videos,move them
+   to the "test_video" folder.
+
+   Output: Count Of Total Number Of Fake Videos,Total Number Of Real Videos and Total Number Of Videos With No Faces
+
+
+    "--model-name": Name of the Model.Models are stored in the "Trained_Models" folder.
+                    Select a model from that folder. By-default "default.pth" is selected.
+                    If you want to test your own model,save it in the "Trained_Models"
+
+    "--per-frame": If you pass say 5 in this argumet,every 5th frame will be tested.Pass 1 to test every frame in the video.
+                   By-default every 10th frame is tested.
+
+   Example:    python test_video_directory.py --model-name default.pth --per-frame 10
+
+
+
+
+
+********-------------------------------------------------xxxxxxxxxxxx------------------------------------------------------------********
+
+
+
+
+5.test_face.py
+  Test whether an image contains fake faces or not.
+
+  Output: The input will be an image and the output will be an image with red bounding
+          box around fake faces and green bounding box around real faces.
+          The output image will be saved in the "test_faces_output" folder.
+
+
+    "--image-name": Name of the Image you want to test.Images are stored in "test_images" folder.
+                    Select the name of the image from the folder,example: test_default_fake.jpg or test_default_real.jpg , etc.
+                    If you want to test your own image,save it in the "test_images" folder first.
+
+    "--crop": If cropping is required,input True,else input False.This is useful when you have an image in which more than one
+              face is present.
+
+
+
+  Example:     python test_face.py --image-name 23.jpg --crop True
+
+
+
+  ********-------------------------------------------------xxxxxxxxxxxx------------------------------------------------------------********
+
+
+  6.test_FIM.py
+Find manipulated portions in images.
+
+Output: The input will be an image and the output will be an image with manipulated portion highlighted as the white portion.
+        The output images will be saved in the "test_full_images_output" folder.
+
+
+  "--image-name": Name of the Image you want to test.Images are stored in "test_full_images" folder.
+                  Select the name of the image from the folder,example: test_default_fake.jpg or test_default_real.jpg , etc.
+                  If you want to test your own image,save it in the "test_full_images" folder first.
+
+
+
+
+Example:     python test_FIM.py --image-name 23.jpg
