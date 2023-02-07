@@ -77,56 +77,44 @@ The Dataset should have two folders: train and valid. Both should contain folder
   
 <h2>Steps to recreate</h2>
 <h4>Prerequisites</h4>
-- Python 3.8.8
-- Flask 1.1.2
-- Werkzeug 1.0.1
-- conda 4.10.1
+- Python 3.8.8<br>
+- Flask 1.1.2<br>
+- Werkzeug 1.0.1<br>
+- conda 4.10.1<br>
 
 <h3> To run the application locally on your machine </h4><br>
 Copy your trained model to the models folder.
-   - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1UX8jXUXyEjhLLZ38tcgOwGsZ6XFSLDJ-?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
+   - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1PnQ5Fr8yxt9I6uQo7GXS9hvmSefhTPWg?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
 
-#### Step 1 : Clone the repo and go to the Django Application
+#### Step 1 : Clone the repo and go to the Fake_Detection_Tool
 `git clone https://github.com/hsam-2021/deepfake-generation-and-detection `
 
 #### Step 2: Install the requirements
-`pip install -r requirements.txt`
+`To install dependencies required, Use the environment.yml from downloaded folder <br>
+Use this command to create environment from the environment.yml file- <br><b>conda env create -f environment.yml</b>
 
-**Note :** Here you may need to do a recursive install of the requirements.txt and depending up compatible versions update and re-install the requirements.txt
+
+**Note :** Must keep this file facenet_pytorch-2.2.7-py3-none-any.whl in the same folder to install dependency. Here you may need to do a recursive install some packages and depending up compatible versions update and pip install package name
 
 #### Step 3: Copy Models
 
-Copy the pre-trained model to the models folder i.e Django Application/models/
+Copy the pre-trained model to the models folder i.e Fake_Detection_Tool/Trained_models/
 
 
 #### Step 4: Run the project
-Navigate to the path where manage.py file is located `\Deepfake_detection_miniproject_3\Django Application`. Open the command prompt and run 
+Navigate to the path where app.py file is located `\Fake_Detection_Tool`. Open the Anaconda prompt shell and run 
 
-`python manage.py runserver`
+ conda activate env
+`python app.py`
 
 #### Step 5: Accessing the web app in browser
 Once the server is up and running copy the following URL in any of your favourite browser.
 
-`http://127.0.0.1:8000/`
+`http://127.0.0.1:5001/`
 
-
-
-The Code is written in Python 3.7. Also, Download and install Anaconda follow steps given in this link:<br>
-      https://docs.anaconda.com/anaconda/install/ <br>
-To install dependencies required, Download this file - environment.yml <br>
-Use this command to create environment from the environment.yml file- <br><b>conda env create -f environment.yml</b>
-
-*Must keep this file facenet_pytorch-2.2.7-py3-none-any.whl in the same folder to install dependency 
-
- <h4> Deployment </h4>
- To run this web app:
- Step 1- conda activate env<br>
- Step 2: Download the folder <b>Fake_Detection_Tool</b> from drive link where the complete code in folder Fake_Detection_Tool is available.Go to folder Fake_Detection_Tool and run <b> python app.py </b> . It will give localhost address - <b> http://127.0.0.1:5001/ </b> where the tool is hosted at this address.
- Example is shown as: 
- <img src="https://user-images.githubusercontent.com/38296253/190883776-acd3512d-cb37-431b-9195-7b527a77b64a.PNG" width="300" height="200">
 
  
-<h4> Technologies Used </h4>
+<h3> Technologies Used </h3>
 <img src="https://user-images.githubusercontent.com/38296253/190848411-b39b8984-58fb-4b8d-b193-e2afe43f8b57.png" width="100">
 <img src="https://user-images.githubusercontent.com/38296253/190848468-b376733f-8cd1-4d16-91f6-7e553841dba1.png" width="100">
 
@@ -135,7 +123,7 @@ Use this command to create environment from the environment.yml file- <br><b>con
 <img src="https://user-images.githubusercontent.com/38296253/190889052-b89c3d3d-2698-4f02-9cb2-170bc1c54fd0.png" width="100">
 <img src="https://user-images.githubusercontent.com/38296253/190889081-de658f33-d6e3-4568-8dc5-c7fb45871f41.png" width="100">
 
-<h4> To Do </h4>
+<h3> To Do </h3>
 To integrate it with other platform like Reddit, Instagram etc.
 <h4> Note </h4>
 Due to restriction in uploading of file size on github, the entire code is available on google drive link. Please refer to google drive link - https://drive.google.com/drive/folders/1In68OsTDfS4iaJbaj8jgtEYE-qBaXAfw?usp=sharing
