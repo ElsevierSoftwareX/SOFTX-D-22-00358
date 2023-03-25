@@ -1,9 +1,5 @@
 import flask
 from flask import Flask, request, jsonify, render_template, Blueprint, render_template, redirect, url_for, request, flash
-#import resnet50_vit_model
-#from resnet50_vit_model import VIT, PatchEmbedding, multiHeadAttention, residual, mlp, TransformerBlock, Transformer, \
-#    Classification
-
 import model
 from model import VIT, PatchEmbedding, multiHeadAttention, residual, mlp, TransformerBlock, Transformer, \
     Classification
