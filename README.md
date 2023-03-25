@@ -64,7 +64,7 @@ Create new folder under that make following folders.
 
 
 for testing images, faces and videos on the FDT tool, samples of images, faces and videos are available in the directory and trained weights of models are available as give in the following steps:
-Go to avobe drive link- https://drive.google.com/drive/folders/1In68OsTDfS4iaJbaj8jgtEYE-qBaXAfw?usp=sharing, Download folder Fake_Detection_Tool. Go to folder Fake_Detection_Tool > test_samples > Full Images / Facial Images / Videos
+Go to avobe drive link- https://drive.google.com/drive/folders/1PzH8Kq82QsWGvDkr6L4Zf_KErK_jvfIL?usp=sharing, Download folder Fake_Detection_Tool. Go to folder Fake_Detection_Tool > test_samples > Full Images / Facial Images / Videos
 For downloading model weights : Go to folder Fake_Detection_Tool > Trained_Models
 
     
@@ -90,7 +90,7 @@ The Dataset should have two folders: train and valid. Both should contain folder
 
 <h3> To run the application locally on your machine </h4><br>
 Copy your trained model to the models folder.
-   - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1PnQ5Fr8yxt9I6uQo7GXS9hvmSefhTPWg?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
+   - You can download the trained models from the [Google Drive](https://drive.google.com/drive/folders/1XmWojXGI8j6JIwiHC3M08J-sXdkiYYfv?usp=sharing) and save it in Trained_Models or you can train your models using the steps mentioned in instruction_to_execute_file in Model Testing directory.
 
 #### Step 1 : Clone the repo and go to the Fake_Detection_Tool
 `git clone https://github.com/surbhiraj786/GUI_Fake-Detection.git `
