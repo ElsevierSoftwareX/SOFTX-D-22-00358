@@ -61,10 +61,10 @@
                             <ul>
 
 
-          <img src="{{ url_for('Jedi.return_files_tut_real',filename=filename.Original_Image) }}"" alt="">
-          <img src="{{ url_for('Jedi.return_files_tut_real',filename=filename.Copy_Move_Image) }}"" alt="">
-          <img src="{{ url_for('Jedi.return_files_tut_real',filename=filename.Inpainting_Image) }}"" alt="">
-          <img src="{{ url_for('Jedi.return_files_tut_real',filename=filename.Splicing_Image) }}"" alt="">
+          <img src="{{ url_for('return_files_tut_real',filename=filename.Original_Image) }}"" alt="">
+          <img src="{{ url_for('return_files_tut_real',filename=filename.Copy_Move_Image) }}"" alt="">
+          <img src="{{ url_for('return_files_tut_real',filename=filename.Inpainting_Image) }}"" alt="">
+          <img src="{{ url_for('return_files_tut_real',filename=filename.Splicing_Image) }}"" alt="">
           <br>
     <br>
     <br><br>

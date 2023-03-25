@@ -81,7 +81,8 @@
                   <div class="col-md-8 col-lg-8">
                       <div class="d-flex flex-column">
                           <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
-                              
+                              <!--<h3 class="display-5">Fake Imag</h3><i class="fa fa-facebook"></i><i class="fa fa-google"></i><i class="fa fa-youtube-play"></i><i class="fa fa-dribbble"></i><i class="fa fa-linkedin"></i>
+                              -->
                               </div>
                           <div class="p-3 bg-black text-white">
                               <h6>Verdict Fake or real</h6>
@@ -102,6 +103,34 @@
           </div>
 
 
+           <!--
+            <h1 class="logo cursive">
+              <div class="col-md-4 col-md-offset-4 col-md-4 col-md-offset-4 col-sm6-6">
+                <div class="col-md-4 col-lg-4"><img src="{{ url_for('return_files_tut_face',filename=filename.fake_img_path) }}" alt=""></div><br><br>
+                <div class="d-flex flex-row text-white">
+                  <div class="p-4 bg-primary text-center skill-block">
+                      <h4>Face Category</h4>
+                      <h3>{{filename.label}}</h3>
+                  </div>
+                  <div class="p-3 bg-success text-center skill-block">
+                      <h4>Predicted Fake Score</h4>
+                      <h3>{{filename.score}}</h3>
+                  </div>   
+                </div>
+                
+              <table style="width:100%">
+                
+                <tr>
+                  <td>Face Category</td>
+                  <td>{{filename.label}}</td>
+                  
+                </tr>
+                <tr>
+                  <td>Predicted Fake Score</td>
+                  <td>{{filename.score}}</td>
+                  
+                </tr> 
+                </table>  -->
                 <table style = "width:100%">
                 <h3>Metadata Information</h3>
                 <tr>
@@ -164,7 +193,8 @@
                 
               </table>
 
-</h1>
+     <!--         &nbsp;&nbsp;Face: {{filename.label}}<br>&nbsp;&nbsp;Predicted Fake Score: {{filename.score}}
+         -->   </h1>
           </div>
                                       
         </ul>

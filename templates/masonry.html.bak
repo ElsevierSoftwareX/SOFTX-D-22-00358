@@ -67,10 +67,10 @@
 
                       <div class="video">
                         <video autoplay="" loop="" muted width=600 height=600>
-                          <source src="{{ url_for('Jedi.return_files_tut_real',filename=filename.input_f_n) }}""  type="video/mp4" />
+                          <source src="{{ url_for('return_files_tut_real',filename=filename.input_f_n) }}""  type="video/mp4" />
                             </video>
                             <video autoplay="" loop="" muted width=600 height=600>
-                              <source src="{{ url_for('Jedi.return_files_tut_real',filename=filename.output_f_n) }}""  type="video/mp4" />
+                              <source src="{{ url_for('return_files_tut_real',filename=filename.output_f_n) }}""  type="video/mp4" />
                                 </video>
                       </div>
                       <div class="video">

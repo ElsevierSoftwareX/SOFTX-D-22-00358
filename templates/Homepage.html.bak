@@ -313,7 +313,7 @@
                     <div style="flex-direction: column;
                     display: flex;
                     align-items: center;">
-                        <form action="/uploader1" method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                        <form action="/uploader" method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
                             <!-- <div class="boxes d-flex justify-content-center"><label><b>Browse image or video file</b></label></div> -->
   
                             <div class="container" >
