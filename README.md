@@ -21,7 +21,15 @@ The Demo of Fake Detection tool is available at this link:-
 https://drive.google.com/file/d/1Mx-uEaHOGk7V7KL3QJ_TJLNOS7DhOFjn/view?usp=sharing (for GIF video)<br>
 https://drive.google.com/file/d/1BeTUMwci9uNNuU7RxOkGy4SHAM0PJ6u5/view?usp=share_link
 
-<br><br>
+<br>
+<h4>Demo of incorporation of other detection models: </h4>
+
+
+https://user-images.githubusercontent.com/38296253/227717927-67026690-8b00-4cc3-8ab6-b77c3b24a438.mp4
+
+
+<br>
+
 
  
  The screenshots of the results page for detection of fake facial image, fake image and fake video are:-
@@ -107,7 +115,7 @@ Navigate to the path where app.py file is located `\Fake_Detection_Tool`. Open t
 #### Step 5: Accessing the web app in browser
 Once the server is up and running copy the following URL in any of your favourite browser.
 
-`http://127.0.0.1:5001/`
+`http://127.0.0.1:5000/`
 
 
  
