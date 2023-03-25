@@ -1,0 +1,57 @@
+
+name: Deepfake Detection Model Versioning 
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  version_model:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
+      - name: Set up Python
+      - uses: actions/Setup-python@v2
+        with:
+           python-version: 3.8.8
+
+      - name: Install dependencies 
+        run: conda env create -f environment.yml
+
+      - name: Train model
+        path: /Fake_Detection_Tool/Model Testing/ 
+        run: |
+         python train.py
+        
+      - name: Create new model version
+        uses: actions/upload_artifact@v2
+        with:
+         name: model
+         path: /Trained_Models/model.pth
+         
+      - name: Create GitHub release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v1.0.0
+          release_name: Version 1.0.0
+          body: |
+            Changes in this version:
+            - Trained model on new data
+            - Improved accuracy
+          draft: false
+          prerelease: false
+      - name: Save release ID
+        run: echo "${{ steps.create_release.outputs.release_id }}" >> release_id.txt
+
+      - name: Test the model
+        run: |
+         python app.py
