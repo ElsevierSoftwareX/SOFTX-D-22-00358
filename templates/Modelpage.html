@@ -233,8 +233,8 @@
           <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#services">Fake Detector</a></li>
-			  <li><a class="nav-link scrollto" href="/">Update Model</a></li>
+              <li><a class="nav-link scrollto" href="/">Fake Detector</a></li>
+			  <li><a class="nav-link scrollto" href="#model_update">Update Model</a></li>
               <li><a class="nav-link scrollto" href="/news">News</a></li>
               <li><a class="nav-link scrollto" href="#about">About</a></li>
                </ul>
@@ -301,103 +301,45 @@
     </div>
   </section>
   
-    <section id="services">
-      <div class="container mb-4" >
+	<section id="model_update">
+	<div class="container mb-4 " >
         <div class="row" style="justify-content: center;">
             <div class="col-md-12 d-flex justify-content-center align-items-center" >
-              <div class='spinner-displayer'>
-              </div>
-              
-              <div id="container" class="vd">
-                <!-- <div class='spinner-displayer'></div> -->
-                    <div style="flex-direction: column;
-                    display: flex;
-                    align-items: center;">
-                        <form action="/uploader1" method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-                            <!-- <div class="boxes d-flex justify-content-center"><label><b>Browse image or video file</b></label></div> -->
+                <div class="abc d-flex justify-content-center align-items-center" style="border: 2px solid rgb(49, 49, 49);margin: 10px; padding: 30px; border-radius: 7px; background-color: #FFFAFA;">
+                    <div>
+                        <form action="/model_updates " method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                            <div class="boxes d-flex justify-content-center"></div>
   
                             <div class="container" >
                               <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
                                 
                               <div class="image-upload-wrap">
-                                <input name='file1' class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*,video/*" />
+                                <input name='file1' class="file-upload-input" type='file' onchange="readURL(this);" accept=".pth, .pkl" />
                                 <div class="drag-text">
-                                  <h3>Drag and drop a Image/Video</h3>
+                                  <h3>Drag and drop a model weights here</h3>
                                 </div>
                               </div>
+							  
                               <div class="file-upload-content">
                                 <img class="file-upload-image" src="#" alt="your image" />
                                 <div class="image-title-wrap">
-                                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Model</span></button>
                                 </div>
+                                </div> 
                               </div>
-                            </div>                       
-                         
-                          <div class="container">
-                            <div class="container__item">
-                                <input type="text" class="form__field" name="image_url" placeholder="Paste Imge URL Link Here ..." />
-                            </div>
-                            <br><br>
-                         </div style="display: flex;
-                         align-items: center;
-                         justify-content: center; flex-direction:column">
-                          <div class="container">
-                            <div class="container__item">
-                                <input type="text" class="form__field" name="video_url" placeholder="Paste Video URL Link Here..." />
-                            </div>
-                          </div>
-
-                          <!-- <div class="containerr">
-                            <button class='tay' type = "submit" onclick='spiny()'>
-                                <a href="#"> Press Here </a>
-                            </button>
-                            <center class="example">
-                                <img src="cupertino_activity_indicator.gif" alt="loder">
-                            </center>
-                        </div> -->
-                        <button type="submit" id="btn" class="btn btn--primary btn--inside uppercase">Send</button>
-
-
-                          <!-- <button type = "submit" class="btn btn--primary btn--inside uppercase">Send</button> -->
+                        
+<br> 							
+                          <button type = "submit" class="btn btn--primary btn--inside uppercase" >Load</button>
                         </form>
                         <br>
-
-
                         
-                <div style="display: flex;
-                align-items: center;
-                justify-content: center;" class="buttons">
-                  <div class="row" style="align-items: center
-                  ;">
-                    <a href="/twitter"><button class="twitter">
-                    <span><i class="fab fa-twitter"></i></span>Twitter</button></a>
                     </div>
-
-                        <!--<div style="padding: 0px 160px 0px 0px;"><a href="/instagram" class="btn btn-success" style="margin: center; background: #f09433; 
-                          background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-                          background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-                          background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); "> Search in instagram</a></div>-->
-                         </div>
                     </div>
                 </div>
-
-
-                <!-- <div class="buttons">
-                  <div class="row">
-                    <a href="/twitter"><button class="twitter">
-                    <span><i class="fab fa-twitter"></i></span>Twitter</button></a>
-                    </div> -->
-
-
-                  
-				  <!-- <div class="row">
-                    <a href="reddit"><button class="reddit">
-                    <span><i class="fab fa-reddit"></i></span>Reddit</button></a>
-                  </div>   -->
                 </div>
-              </div>
-            </div>
-          </section>
+            </div>      	
+	</section>
+	
           
   
     <!-- End Services Section -->

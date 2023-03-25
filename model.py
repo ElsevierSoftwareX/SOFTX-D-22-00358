@@ -11,27 +11,17 @@ from torch import nn
 from torch import Tensor
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange, Reduce
-#from torchsummary import summary
 import torchvision.models as models
 from torch.autograd import Variable
 from vision_transformer_pytorch import VisionTransformer
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-
-#positions are here learned not fixedly added
-#instead of linear leaye, conv2d can be added
 class PatchEmbedding(nn.Module):
     def __init__(self, in_channels: int = 512, patch_size: int = 4, emb_size: int = 768, img_size: int = 28):#in_channels: int = 3, patch_size: int = 16, emb_size: int = 768, img_size: int = 224
         self.patch_size = patch_size
         super().__init__()
-        """
-        self.projection = nn.Sequential(
-            # break-down the image in s1 x s2 patches and flat them
-            Rearrange('b c (h s1) (w s2) -> b (h w) (s1 s2 c)', s1=patch_size, s2=patch_size),
-            nn.Linear(patch_size * patch_size * in_channels, emb_size)
-        )
-        """
+        
         self.patch_size = patch_size
         self.linear = nn.Linear(patch_size * patch_size * in_channels, emb_size)
         self.cls_token = nn.Parameter(torch.randn(1,1, emb_size))
@@ -140,14 +130,10 @@ class VIT(nn.Module):
     self.Classification = Classification(n_classes=2)
   def forward(self,x):
     resnetOutput = self.resnetM(x)
-    #print(resnetOutput.shape)
     patchEmbeddings = self.PatchEmbedding(resnetOutput)
     transformerOutput = self.Transformer(patchEmbeddings)
     classificationOutput = self.Classification(transformerOutput)
-    #output = F.log_softmax(classificationOutput, dim=1)
     output = F.softmax(classificationOutput, dim=1)    
-    #output = torch.softmax(classificationOutput.squeeze(),0)
     return output
-    #return classificationOutput
-################################
+    
 
